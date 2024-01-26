@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 // eslint-disable-next-line no-unused-vars
 import React, { useRef } from "react";
 import Card from "./Card";
@@ -26,7 +27,7 @@ const Foreground = () => {
   ];
   return (
     <div ref={ref} className="fixed z-[3] top-0 left-0 w-full h-full flex gap-5 p-6 flex-wrap">
-      {data.map((item, index) => (
+      {data.map((item) => (
         <Card data={item} reference={ref} />
       ))}
     </div>
